@@ -170,9 +170,11 @@
                             <!--User dropdown-->
 
                             <li class="nav-item dropdown navbar-brand">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">GG School of Arts</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">GG School of
+                                    Arts</a>
                                 <div class="dropdown-menu dropdown-menu-end">
-                                    <a href="../profile_page/profile_page.html" class="dropdown-item text-center">Profile</a>
+                                    <a href="#"
+                                        class="dropdown-item text-center">Profile</a>
 
                                     <div class="dropdown-divider user-profile-dropdown"></div>
 
@@ -221,14 +223,14 @@
 
             <!--Dashboard icon-->
             <li class="nav-item">
-                <a href="dashboard.html" class="navbar-brand">
+                <a href="../dashboard/dashboard.html" class="navbar-brand">
                     <img src="./images/icons/dashboard.png" class="down-navbar-icons" alt="dashboard">
                 </a>
             </li>
 
             <!--Courses icon-->
             <li class="nav-item">
-                <a href="../my_courses/courses_pages.html" class="navbar-brand">
+                <a href="./course_page_d.html" class="navbar-brand">
                     <img src="./images/icons/courses.png" class="down-navbar-icons" alt="courses">
                 </a>
             </li>
@@ -243,19 +245,84 @@
             <!--Payment Control Center icon-->
             <li class="nav-item">
                 <a href="#" class="navbar-brand">
-                    <img src="./images/icons/Payment-Control-Center.png" class="down-navbar-icons" alt="payment-control">
+                    <img src="./images/icons/Payment-Control-Center.png" class="down-navbar-icons"
+                        alt="payment-control">
                 </a>
             </li>
         </ul>
     </nav>
 
+    <!--==================== Courses Section ====================-->
+
     <section class="card container section-card">
         <div class="card-body">
             <p class="container section-heading">Courses</p>
-            <hr class="mb-2" style="width:160px;background-color:#00C9A8;height: 3px;">
+            <hr class="mb-4" style="width:160px;background-color:#00C9A8;height: 3px;">
+            <div class="mb-4 d-flex">
+                <a href="#" class="text-decoration-none course-button px-4 py-3 ms-md-auto">Add New Course</a>
+            </div>
 
-            <div class="row ms-1">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col col-lg-4 col-md-6 mb-4">
+                    <div class="current-courses card h-100">
+                        <img src="./images/courses/learn-illustrator.png" class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>120 students</div>
+                                <div>5h 57m</div>
+                            </div>
+                            <h4 class="text-title mb-3">Adobe Illustrator CC - Essentials
+                                Training</h4>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="pr-5">Daniel Scott</div>
+                                <div><a href="#" class="text-decoration-none course-button px-5 py-2">View</a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col col-lg-4 col-md-6 mb-4">
+                    <div class="current-courses card h-100">
+                        <img src="./images/courses/learn-advance-animation-course-in-rohini-delhi 1.png"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>524 students</div>
+                                <div>6h 12m</div>
+                            </div>
+                            <h4 class="text-title mb-3">Start Drawing: 3 Fun, Freeing Exercises to Spark Your Creativity
+                            </h4>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="pr-5">Carly Kuhn</div>
+                                <div><a href="#" class="text-decoration-none course-button px-5 py-2">View</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col col-lg-4 col-md-6 mb-4">
+                    <div class="current-courses card h-100">
+                        <img src="./images/courses/Learn Complete-Course-in-Adobe-Photoshop-CC 1.png"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>524 students</div>
+                                <div>6h 12m</div>
+                            </div>
+                            <h4 class="text-title mb-3">Adobe Photoshop CC - Essentials
+                                Training Course
+                            </h4>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="pr-5">Daniel Scott</div>
+                                <div><a href="#" class="text-decoration-none course-button px-5 py-2">View</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
