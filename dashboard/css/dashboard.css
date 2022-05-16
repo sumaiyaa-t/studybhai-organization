@@ -144,16 +144,17 @@ section .subsection {
     font-weight: 500;
 }
 
-
-/* Total Students*/
+/* Subheadings for total students, trainers & balance*/
 .subheading {
     text-align: center;
     color: #fff;
 }
+
 .subheading-number {
    font-size: 40px;
    font-weight: 700;
 }
+
 .subheading-text {
     font-size: 26px;
     font-weight: 500;
