@@ -130,75 +130,70 @@ form .search-message-button {
 .section-heading {
     font-size: 2rem;
 }
-.form-control{
+
+.form-control {
     border-radius: 10px;
     border: 1px solid #ccc;
-
 }
-.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #9F9F9F;
-    opacity: 1; /* Firefox */
+    opacity: 1;
+    /* Firefox */
 }
 
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: #9F9F9F;
 }
 
-.form-control::-ms-input-placeholder { /* Microsoft Edge */
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: #9F9F9F;
 }
 
-.lecture-video-card{
-    border-radius: 10px;
-    border: 1px solid #ccc;
-
-}
-
-/* Upload*/
-
-/* input[type=file]::file-selector-button {
+.form-buttons {
     border-radius: 50px;
     text-align: center;
-    padding: 10px;
-    background: #00C9A8;
-    border:none;
+    border: none;
     color: #fff;
-} */
+}
 
-/* input[type=file] {
-    width: 300px;
-} */
+/* Set border for lecture video */
+.lecture-video-card {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.video-file-input {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
 
-/* .file-upload-input {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    cursor: pointer;
-} */
+/* Upload Files*/
 
-input[type="file"] { 
-    z-index: -1;
-    position: absolute;
-    opacity: 0;
-  }
-  
-  input:focus + label {
+input[type="file"] {
+    display: none;
+}
+
+input:focus+label {
     outline: 2px solid;
-  }
-  .upload-file-button{
-    border-radius: 50px;
-    text-align: center;
-    padding: 10px;
-    background: #00C9A8;
-    border:none;
-    color: #fff;
-  }
-
-.video-file-input{
-    border: 1px solid #ccc;
-    border-radius: 10px;
 }
+
+.upload-file-button {
+    background: #00C9A8;
+}
+
+/* Add/Cancel buttons*/
+
+.add-button {
+    background: #00C9A8;
+}
+
+.cancel-button {
+    background: #D65151;
+}
+
 /*=============== MEDIA QUERIES  ===============*/
 
 /*  media screen for tab ( portrait ) */

@@ -1,4 +1,4 @@
-<html lang="en">
+<!DOCTYPE html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -252,63 +252,169 @@
         </ul>
     </nav>
 
-    <section class="card container section-card">
-        <div class="card-body">
-            <p class="container section-heading">Add Course</p>
-            <hr class="mb-4" style="width:220px;background-color:#00C9A8;height: 3px;">
-            <div>
-                <form>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="courseTitleInput" aria-describedby="titleHelp"
-                            placeholder="Course Title">
-                    </div>
+    <section class="container">
+        <div class="card section-card">
+            <div class="card-body">
+                <p class="container section-heading">Add Course</p>
+                <hr class="mb-4" style="width:220px;background-color:#00C9A8;height: 3px;">
+                <div>
+                    <form>
+                        <!--Course Title-->
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="courseTitleInput" aria-describedby="titleHelp"
+                                placeholder="Course Title">
+                        </div>
 
-                    <div class="mb-3">
-                        <textarea class="form-control" id="descriptionInput" rows="3"
-                            placeholder="Course Description"></textarea>
-                    </div>
+                        <!--Course Description-->
+                        <div class="mb-3">
+                            <textarea class="form-control" id="descriptionInput" rows="3"
+                                placeholder="Course Description"></textarea>
+                        </div>
 
-                    <div class="mb-3">
-                        <div class="card lecture-video-card">
-                            <div class="card-body">
-                                <p style="color:#9F9F9F;">Lecture Video</p>
-                                <div class="mt-4">
-                                    <div class="row g-3 video-file-input">
-                                        <div class="col-auto d-flex">
-                                            <div>
-                                                <img src="./images/form-icons/recording.png">
+                        <!--Weekly Lecture Video-->
+                        <div class="mb-3">
+                            <div class="card lecture-video-card">
+                                <div class="card-body">
+                                    <p style="color:#9F9F9F;">Lecture Video</p>
+                                    <div class="mt-4">
+                                        <div class="row g-3 video-file-input">
+                                            <div class="col-auto d-flex">
+                                                <div>
+                                                    <img src="./images/form-icons/recording.png">
+                                                </div>
+                                                <div class="ms-2" id="file-upload-filename"></div>
                                             </div>
-                                            <div class="ms-2" id="file-upload-filename"></div>
-                                        </div>
-                                        <div class="col-auto mb-3 ms-auto">
-                                            <input type="file" id="file-upload" multiple required />
-                                            <label for="file-upload" class="upload-file-button px-4 py-2">Upload</label>
+                                            <div class="col-auto mb-3 ms-auto">
+                                                <input type="file" id="file-upload" multiple required />
+                                                <label for="file-upload"
+                                                    class="form-buttons upload-file-button px-4 py-2">Upload</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="mb-3">
-                        <div class="card lecture-video-card">
-                            <div class="card-body">
-                                <p style="color:#9F9F9F;">Syllabus</p>
-                                <div class="mt-4">
-                                    <input type="text" class="form-control" id="syllabusInput"
-                                        aria-describedby="syllabusHelp" placeholder="Week 1">
+                        <!--Syllabus-->
+                        <div class="mb-3">
+                            <div class="card lecture-video-card">
+                                <div class="card-body">
+                                    <p style="color:#9F9F9F;">Syllabus</p>
+                                    <div class="mt-4">
+                                        <input type="text" class="form-control" id="syllabusInput"
+                                            aria-describedby="syllabusHelp" placeholder="Week 1">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="mb-3">
-                        <textarea class="form-control" id="instructordetailsInput" rows="2"
-                            placeholder="Instructor Details"></textarea>
-                    </div>
+                        <!--Course Materials Upload-->
+                        <div class="mb-3">
+                            <div class="card lecture-video-card">
+                                <div class="card-body">
+                                    <p style="color:#9F9F9F;">Course Materials</p>
+                                    <div class="mt-4">
+                                        <div class="row">
 
-                    <button type="submit" class="course-button">Submit</button>
-                </form>
+                                            <div class="col-lg-4">
+                                                <div class="row align-items-center g-3">
+                                                    <div class="col-lg-4">
+                                                        <div>
+                                                            <img src="./images/form-icons/File Icon 2.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 mb-3 ">
+                                                        <div class="ms-2" id="slide1-upload-filename"></div>
+
+                                                        <input type="file" id="slide1-upload" multiple required />
+                                                        <label for="slide1-upload"
+                                                            class="form-buttons upload-file-button px-3 py-2">Upload
+                                                            Lecture Slide
+                                                            1</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="row align-items-center g-3">
+                                                    <div class="col-lg-4">
+                                                        <div>
+                                                            <img src="./images/form-icons/File Icon 2.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 mb-3 ">
+                                                        <div class="ms-2" id="slide2-upload-filename"></div>
+                                                        <input type="file" id="slide2-upload" multiple required />
+                                                        <label for="slide2-upload"
+                                                            class="form-buttons upload-file-button px-3 py-2">Upload
+                                                            Lecture Slide
+                                                            2</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="row align-items-center g-3">
+                                                    <div class="col-lg-4">
+                                                        <div>
+                                                            <img src="./images/form-icons/File Icon 2.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 mb-3 ">
+                                                        <div class="ms-2" id="slide3-upload-filename"></div>
+                                                        <input type="file" id="slide3-upload" multiple required />
+                                                        <label for="slide3-upload"
+                                                            class="form-buttons upload-file-button px-3 py-2">Upload
+                                                            Lecture Slide
+                                                            3</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Instructor Details-->
+                        <div class="mb-3">
+                            <textarea class="form-control" id="instructordetailsInput" rows="2"
+                                placeholder="Instructor Details"></textarea>
+                        </div>
+
+                        <!--Form Buttons-->
+                        <div class="text-center">
+
+                            <!--Add Button-->
+                            <button type="submit" class="form-buttons add-button px-5 py-2" data-bs-toggle="modal"
+                                data-bs-target="#addModal">Add</button>
+
+                            <!--Cancel Button-->
+                            <a><button type="button" class="form-buttons cancel-button px-5 py-2">Cancel</button></a>
+                        </div>
+
+                        <!--Add Button Modal-->
+                        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content p-5">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-center">Course Succesfully Added!</p>
+                                        <img src="./images/form-icons/double-tick.png" class="d-block mx-auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
     </section>
@@ -319,6 +425,7 @@
     </script>
 
     <script src="./js/file-upload.js"></script>
+    <script src="./js/slide-upload.js"></script>
 </body>
 
-</html>
+</!DOCTYPE>
