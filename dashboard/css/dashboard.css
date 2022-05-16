@@ -23,12 +23,20 @@ nav .navbar-nav li a {
     color: #000 !important;
 }
 
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 .vr-color {
     color: #00c9a8;
 }
 
 form .search-button {
-    width: 480px;
+    width: 400px;
     background-color: #e5e5e5;
     color: #9f9f9f;
     border-radius: 25px;
@@ -127,10 +135,38 @@ section .courses {
     border-radius: 20px;
 }
 
-section .ongoing-courses {
-    background-color: #e5e5e5;
+section .subsection {
+    background: url('../images/dashboard-section/gradient-background.png');
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+
+.text-heading {
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+/* Total Students*/
+.subheading {
+    text-align: center;
+    color: #fff;
+}
+.subheading-number {
+   font-size: 40px;
+   font-weight: 700;
+}
+.subheading-text {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.bdt-text{
+    font-size: 14px;
+    font-weight:500;
 }
 
 section .saved-courses {
@@ -139,33 +175,19 @@ section .saved-courses {
     border-radius: 20px;
 }
 
-.text-color {
-    color: #00c9a8;
-}
-
-/* DEADLINE */
-
-section .deadline {
-    border-radius: 20px;
-}
-
-.text-view {
-    color: #00c9a8;
-    text-align: right;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    text-decoration: none;
-}
 
 /*=============== MEDIA QUERIES  ===============*/
 
 /*  media screen for tab ( portrait ) */
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-    .course-image {
-        min-width: 100%;
+    form .search-button {
+        width: 300px;
     }
 }
+
+
+/* --------------- media screen for tab (landscape) --------------------------- */
 
 /*  media screen for mobile */
 
@@ -175,8 +197,41 @@ section .deadline {
     form .search-button {
         width: 300px;
     }
+}
 
-    .course-image {
-        min-width: 100%;
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    /* For landscape layouts only */
+    /*Top Navbar Search Form*/
+    form .search-button {
+        width: 300px;
+    }
+}
+
+/* --------------- media screen for tab (pro) --------------------------- */
+
+@media only screen and (min-device-width: 1026px) and (max-device-width: 1166px) {
+
+    /*Top Navbar Search Form*/
+    form .search-button {
+        width: 300px;
+    }
+}
+
+/* --------------- media screen for tab ( pro ) landscape ------------- */
+
+@media only screen and (min-device-width: 1366px) and (min-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    /*Top Navbar Search Form*/
+    form .search-button {
+        width: 300px;
+    }
+}
+
+/*  media screen for max width 1004px*/
+
+@media only screen and (max-width: 1004px) {
+    form .search-button {
+        width: 200px;
     }
 }
