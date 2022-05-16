@@ -12,6 +12,9 @@ html body {
     color: black;
     background-color: #e5e5e5;
 }
+a{
+    text-decoration: none;
+}
 
 /*=============== TOP NAVBAR ===============*/
 .navbar {
@@ -107,6 +110,46 @@ form .search-message-button {
     margin-top: 2em;
 
 }
+.section-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text-user{
+    color: #00C9A8;
+}
+.text-user:hover{
+    color: #00C9A8;
+}
+
+iframe{
+    width:580;
+    height:540;
+    border-radius: 20px;
+}
+.comment {
+    background-color: #3a3a3a8a;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.comment .user img {
+    width: 20px;
+    padding-right: 0.2rem;
+}
+
+.comment-text{
+    color: #EEEEEE;
+}
+
+.comments-button{
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    color: #EEEEEE;
+    background: #9F9F9F;
+}
 
 .course-card-body {
     background-color: #004A3E;
@@ -117,11 +160,6 @@ form .search-message-button {
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-}
-
-iframe{
-    width: 520;
-    height: 480;
 }
 
 
@@ -239,6 +277,11 @@ iframe{
     form .search-button {
         width: 300px;
     }
+    .section-description {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
     iframe {
         width: auto;
         height: auto;
@@ -260,6 +303,11 @@ iframe{
         padding: 4px;
         font-size: 16px;
     }
+    .section-description {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
     iframe {
         width: auto;
         height: auto;
@@ -272,6 +320,11 @@ iframe{
     /*Top Navbar Search Form*/
     form .search-button {
         width: 300px;
+    }
+    .section-description {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
     }
     iframe {
         width: auto;
@@ -287,6 +340,11 @@ iframe{
     form .search-button {
         width: 300px;
     }
+    .section-description {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
     iframe {
         width: auto;
         height: auto;
@@ -301,6 +359,11 @@ iframe{
     form .search-button {
         width: 300px;
     }
+    .section-description {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
     iframe {
         width: auto;
         height: auto;
@@ -312,9 +375,5 @@ iframe{
 @media only screen and (max-width: 1004px) {
     form .search-button {
         width: 200px;
-    }
-    iframe {
-        width: auto;
-        height: auto;
     }
 }
