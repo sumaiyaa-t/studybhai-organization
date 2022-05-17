@@ -1,4 +1,4 @@
-<!DOCTYPE html lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./css/offline_add_course.css" />
+    <link rel="stylesheet" href="./css/all_comments.css" />
 
     <title>Studybhai</title>
 </head>
@@ -216,204 +216,63 @@
         </div>
     </div>
 
-
-    <!--==================== DOWN NAVBAR ====================-->
-    <nav class="sidebar navbar navbar-expand d-lg-block">
-        <ul class="navbar-nav sidebar-menu">
-
-            <!--Dashboard icon-->
-            <li class="nav-item">
-                <a href="../dashboard/dashboard.html" class="navbar-brand">
-                    <img src="./images/icons/dashboard.png" class="down-navbar-icons" alt="dashboard">
-                </a>
-            </li>
-
-            <!--Courses icon-->
-            <li class="nav-item">
-                <a href="../course_page_d/course_page_d.html" class="navbar-brand">
-                    <img src="./images/icons/courses.png" class="down-navbar-icons" alt="courses">
-                </a>
-            </li>
-
-            <!--Trainer icon-->
-            <li class="nav-item">
-                <a href="#" class="navbar-brand">
-                    <img src="./images/icons/Trainer.png" class="down-navbar-icons" alt="trainer">
-                </a>
-            </li>
-
-            <!--Payment Control Center icon-->
-            <li class="nav-item">
-                <a href="#" class="navbar-brand">
-                    <img src="./images/icons/Payment-Control-Center.png" class="down-navbar-icons"
-                        alt="payment-control">
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <!--==================== Offline add course page ====================-->
+    <!--==================== ALL COMMENTS ====================-->
     <section class="container">
         <div class="card section-card">
             <div class="card-body">
-                <p class="container section-heading title-hr mb-4">Add Course</p>
-                <div>
-                    <form>
-                        <!--Course Title-->
-                        <div class="mb-3">
-                            <input type="text" class="form-control" id="courseTitleInput" aria-describedby="titleHelp"
-                                placeholder="Course Title">
+                <p class="container section-heading title-hr mb-4">All Live Comments</p>
+                <div class="center">
+
+                    <div class="">
+                        <div>
+                            <img src="./images/user-icon.png" alt=""><a href="" class="text-user">User1</a>
                         </div>
+                        <p class="comments">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <hr class="hr-style">
 
-                        <!--Course Description-->
-                        <div class="mb-3">
-                            <textarea class="form-control" id="descriptionInput" rows="3"
-                                placeholder="Course Description"></textarea>
+                    <div>
+                        <div>
+                            <img src="./images/user-icon.png" alt=""><a href="" class="text-user">User2</a>
                         </div>
+                        <p class="comments">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <hr class="hr-style">
 
-                        <!--Weekly Lecture Video-->
-                        <div class="mb-3">
-                            <div class="card lecture-video-card">
-                                <div class="card-body">
-                                    <p style="color:#9F9F9F;">Lecture Video</p>
-                                    <div class="mt-4">
-                                        <div class="row g-3 video-file-input">
-                                            <div class="col-auto d-flex">
-                                                <div>
-                                                    <img src="./images/form-icons/recording.png">
-                                                </div>
-                                                <div class="ms-2" id="file-upload-filename"></div>
-                                            </div>
-                                            <div class="col-auto mb-3 ms-auto">
-                                                <input type="file" id="file-upload" multiple required />
-                                                <label for="file-upload"
-                                                    class="form-buttons upload-file-button px-4 py-2">Upload</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+                    <div>
+                        <div>
+                            <img src="./images/user-icon.png" alt=""><a href="" class="text-user">User3</a>
                         </div>
+                        <p class="comments">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <hr class="hr-style">
 
-                        <!--Syllabus-->
-                        <div class="mb-3">
-                            <div class="card lecture-video-card">
-                                <div class="card-body">
-                                    <p style="color:#9F9F9F;">Syllabus</p>
-                                    <div class="mt-4">
-                                        <input type="text" class="form-control" id="syllabusInput"
-                                            aria-describedby="syllabusHelp" placeholder="Week 1">
-                                    </div>
-                                </div>
-                            </div>
+                    <div>
+                        <div>
+                            <img src="./images/user-icon.png" alt=""><a href="" class="text-user">User4</a>
                         </div>
+                        <p class="comments">Lorem ipsum dolor sit amet.</p>  
+                    </div>
+                    <hr class="hr-style">
 
-                        <!--Course Materials Upload-->
-                        <div class="mb-3">
-                            <div class="card lecture-video-card">
-                                <div class="card-body">
-                                    <p style="color:#9F9F9F;">Course Materials</p>
-                                    <div class="mt-4">
-                                        <div class="row">
-
-                                            <div class="col-lg-4">
-                                                <div class="row align-items-center g-3">
-                                                    <div class="col-lg-4">
-                                                        <div>
-                                                            <img src="./images/form-icons/File Icon 2.png">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 mb-3 ">
-                                                        <div class="ms-2" id="slide1-upload-filename"></div>
-
-                                                        <input type="file" id="slide1-upload" multiple required />
-                                                        <label for="slide1-upload"
-                                                            class="form-buttons upload-file-button px-3 py-2">Upload
-                                                            Lecture Slide
-                                                            1</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="row align-items-center g-3">
-                                                    <div class="col-lg-4">
-                                                        <div>
-                                                            <img src="./images/form-icons/File Icon 2.png">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 mb-3 ">
-                                                        <div class="ms-2" id="slide2-upload-filename"></div>
-                                                        <input type="file" id="slide2-upload" multiple required />
-                                                        <label for="slide2-upload"
-                                                            class="form-buttons upload-file-button px-3 py-2">Upload
-                                                            Lecture Slide
-                                                            2</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <div class="row align-items-center g-3">
-                                                    <div class="col-lg-4">
-                                                        <div>
-                                                            <img src="./images/form-icons/File Icon 2.png">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 mb-3 ">
-                                                        <div class="ms-2" id="slide3-upload-filename"></div>
-                                                        <input type="file" id="slide3-upload" multiple required />
-                                                        <label for="slide3-upload"
-                                                            class="form-buttons upload-file-button px-3 py-2">Upload
-                                                            Lecture Slide
-                                                            3</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
+                    <div>
+                        <div>
+                            <img src="./images/user-icon.png" alt=""><a href="" class="text-user">User5</a>
                         </div>
+                        <p class="comments">Lorem ipsum dolor sit amet.</p>
+                       
+                    </div>
+                    <hr class="hr-style">
 
-                        <!--Instructor Details-->
-                        <div class="mb-3">
-                            <textarea class="form-control" id="instructordetailsInput" rows="2"
-                                placeholder="Instructor Details"></textarea>
+                    <div>
+                        <div>
+                            <img src="./images/user-icon.png" alt=""><a href="" class="text-user">User6</a>
                         </div>
-
-                        <!--Form Buttons-->
-                        <div class="text-center">
-
-                            <!--Add Button-->
-                            <button type="submit" class="form-buttons add-button px-5 py-2" data-bs-toggle="modal"
-                                data-bs-target="#addModal">Add</button>
-
-                            <!--Cancel Button-->
-                            <a><button type="button" class="form-buttons cancel-button px-5 py-2">Cancel</button></a>
-                        </div>
-
-                        <!--Add Button Modal-->
-                        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content p-5">
-                                    <div class="modal-header">
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close">
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p class="text-center">Course Successfully Added!</p>
-                                        <img src="./images/form-icons/double-tick.png" class="d-block mx-auto">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                        <p class="comments">Lorem ipsum dolor sit amet.</p>
+                    </div>
                 </div>
+
 
             </div>
         </div>
@@ -423,9 +282,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-
-    <script src="./js/file-upload.js"></script>
-    <script src="./js/slide-upload.js"></script>
 </body>
 
-</!DOCTYPE>
+</html>

@@ -134,6 +134,13 @@ form .search-message-button {
     font-size: 2rem;
 }
 
+.title-hr {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #00C9A8;
+}
+
 section .current-courses {
     background-color: #EEEEEE;
     ;

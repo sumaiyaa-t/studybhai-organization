@@ -100,32 +100,18 @@ form .search-message-button {
     border-radius: 50px;
 }
 
-/*=============== DOWN NAVBAR ===============*/
-
-.sidebar {
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #00c9a8;
-    border-radius: 50px;
-    width: 290px;
-}
-
-.sidebar-menu li {
-    padding: 5px 12px;
-}
-
-.down-navbar-icons {
-    height: 35;
-}
-
-/*=============== DASHBOARD ===============*/
+/*=============== ALL INSTRUCTORS ===============*/
 
 .section-card {
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
+
+.section-heading {
+    font-size: 2rem;
+}
+
 .title-hr {
     text-decoration: underline;
     text-underline-offset: 5px;
@@ -133,43 +119,6 @@ form .search-message-button {
     text-decoration-color: #00C9A8;
 }
 
-.dashboard {
-    font-size: 2rem;
-}
-
-section .subsection {
-    background: url('../images/dashboard-section/gradient-background.png');
-    border: none;
-    border-radius: 10px;
-}
-
-.text-heading {
-    color: #fff;
-    text-align: center;
-    font-size: 26px;
-    font-weight: 500;
-}
-
-/* Subheadings for total students, trainers & balance*/
-.subheading {
-    text-align: center;
-    color: #fff;
-}
-
-.subheading-number {
-   font-size: 40px;
-   font-weight: 700;
-}
-
-.subheading-text {
-    font-size: 26px;
-    font-weight: 500;
-}
-
-.bdt-text{
-    font-size: 14px;
-    font-weight:500;
-}
 
 /*=============== MEDIA QUERIES  ===============*/
 
