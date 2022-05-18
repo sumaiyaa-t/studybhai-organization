@@ -1,0 +1,492 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== BOOTSTRAP ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--==================== FONT AWESOME ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./css/edit_profile.css" />
+
+    <title>Studybhai</title>
+</head>
+
+<body>
+
+   <!--==================== TOP NAVBAR ====================-->
+   <header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <!--Navbar Logo-->
+                <a href="#" class="navbar-brand">
+                    <img src="./images/logo/StudyBhai Logo 1.png" height="28" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <!--Explore-->
+                        <li class="nav-item dropdown navbar-brand">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explore</a>
+                        </li>
+                    </ul>
+
+                    <!--Search form-->
+                    <form class="form-search form-inline md-form form-sm ms-auto me-auto my-2 my-lg-0">
+                        <div class="p-1 search-button shadow-sm">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button id="button-addon2" type="submit" class="btn btn-link text-secondary"><i
+                                            class="fa fa-search"></i></button>
+                                </div>
+                                <input type="search" placeholder="Search" aria-describedby="button-addon2"
+                                    class="search-text border-0 form-control ">
+                            </div>
+                        </div>
+                    </form>
+
+                    <ul class="nav navbar-nav ms-auto">
+
+                        <!--Messages-->
+                        <li class="nav-item navbar-brand dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <img src="./images/icons/message.png" height="28" alt="messages">
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <p class="text-center">Messages</p>
+                                <hr class="messages-hr">
+
+                                <form
+                                    class="form-search form-inline md-form form-sm ms-auto me-auto my-2 my-lg-0 p-2">
+                                    <div class="p-1 search-message-button shadow-sm">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button id="button-addon2" type="submit"
+                                                    class="btn btn-link text-secondary"><i
+                                                        class="fa fa-search"></i></button>
+                                            </div>
+                                            <input type="search" placeholder="Search in messages"
+                                                aria-describedby="button-addon2"
+                                                class="search-text border-0 form-control ">
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="d-flex mt-3">
+                                    <div class="p-2">
+                                        <img src="./images/icons/message_profile.png">
+                                    </div>
+                                    <div>
+                                        <div class="p-1 sender-title">StudyBhai</div>
+                                        <div class="d-flex">
+                                            <div class="p-1">
+                                                <p>Lorem ipsum dolor sit.</p>
+                                            </div>
+
+                                            <div class="ml-auto p-1">
+                                                <p class="notification-time">5:45pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mt-3">
+                                    <div class="p-2">
+                                        <img src="./images/icons/message_profile.png">
+                                    </div>
+                                    <div>
+                                        <div class="p-1 sender-title">StudyBhai</div>
+                                        <div class="d-flex">
+                                            <div class="p-1">
+                                                <p>Lorem ipsum dolor sit.</p>
+                                            </div>
+
+                                            <div class="ml-auto p-1">
+                                                <p class="notification-time">5:45pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--Notification-->
+                        <li class="nav-item navbar-brand dropdown">
+
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <img src="./images/icons/notification.png" height="28" alt="notification">
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <p class="text-center">Notifications</p>
+                                <hr class="notification-hr">
+
+                                <div class="d-flex">
+                                    <div class="p-2">
+                                        <p>Your password was changed</p>
+                                    </div>
+
+                                    <div class="ml-auto p-2">
+                                        <p class="notification-time">08/09/21</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="p-2">
+                                        <p>Your password was changed</p>
+                                    </div>
+
+                                    <div class="ml-auto p-2">
+                                        <p class="notification-time">08/09/21</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <div class="vr vr-color d-none d-lg-block"></div>
+
+                        <!--User image-->
+                        <li class="nav-item navbar-brand">
+                            <a href="#" class="nav-link">
+                                <img src="./images/icons/user.png" height="28" alt="user">
+                            </a>
+                        </li>
+
+                        <!--User dropdown-->
+
+                        <li class="nav-item dropdown navbar-brand">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">GG School of Arts</a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="../profile_page/profile_page.html" class="dropdown-item text-center">Profile</a>
+
+                                <div class="dropdown-divider user-profile-dropdown"></div>
+
+                                <a href="#" class="dropdown-item text-center">Settings</a>
+
+                                <div class="dropdown-divider user-profile-dropdown"></div>
+
+                                <a href="#" class="dropdown-item text-center">Help</a>
+
+                                <div class="dropdown-divider user-profile-dropdown"></div>
+
+                                <a href="#" class="dropdown-item text-center" data-bs-toggle="modal"
+                                    data-bs-target="#logoutModal">Log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- User dropdown logout modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content p-5">
+            <div class="card modal-card p-5">
+                <div class="mb-4">
+                    <h5 class="text-center" id="exampleModalLabel">Are you sure you want to log out?</h5>
+                </div>
+
+                <div class="text-center">
+                    <button type="button" class="yes-button mb-2">Yes</button>
+                    <button type="button" class="no-button mb-2" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!--==================== EDIT PROFILE ====================-->
+    <section class="card container section-card">
+        <div class="card-body">
+
+            <!--Edit Profile Title-->
+            <p style="font-size: 2rem;" class="title-hr mb-4">Edit Profile</p>
+         
+
+            <!--Edit Information-->
+            <div class="container">
+
+                <form>
+                    <!--Full Name-->
+                    <div class="row mb-3">
+                        <label for="inputFullName" class="col-sm-2 col-form-label">Full Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-info form-control">
+                        </div>
+                    </div>
+
+                    <!--Upload Photo-->
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Profile Picture</label>
+                        <div class="col-sm-10 d-flex">
+                            <!-- <img id="userPhoto" class="me-3" src="./images/icons/user-photo.png" alt="user image" />
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <label class="custom-file-upload text-center p-2">Upload photo
+                                        <input type="file" onChange="readURL(this)" />
+                                    </label>
+                                </div>
+                                <div class="col-lg-12 text-muted">Maximum size of 1MB. JPG, GIF, or PNG.</div>
+                            </div> -->
+                            <div class="file-upload">
+
+                                <div class="image-upload-wrap">
+                                    <input class="file-upload-input" type='file' onchange="readURL(this);"
+                                        accept="image/*" />
+                                    <img class="img-card" src="./images/icons/user-photo.png" />
+                                </div>
+
+                                <div class="file-upload-content">
+                                    <img class="file-upload-image" src="" alt="" />
+
+                                </div>
+                                <div class="image-title-wrap">
+                                    <button class="file-upload-btn mt-4" type="button"
+                                        onclick="$('.file-upload-input').trigger( 'click' )">Upload</button>
+                                    <button type="button" onclick="removeUpload()" class="remove-image">
+                                        <i class="fa-solid fa-circle-xmark"></i></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!--Educational Institute-->
+                    <div class="row mb-3">
+                        <label for="educationalInstitute" class="col-sm-2 col-form-label">Educational Institute</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-info form-control">
+                        </div>
+                    </div>
+
+                    <!--Field of Interest-->
+                    <div class="row mb-3">
+                        <label for="fieldOfInterest" class="col-sm-2 col-form-label">Field Of Interest</label>
+                        <div class="col-sm-10">
+                            <select class="form-select form-info form-control">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <hr class="mb-5" style="background-color:#9F9F9F;">
+
+                    <!--Employment Status-->
+                    <div class="row mb-3">
+                        <label for="employmentStatus" class="col-sm-2 col-form-label">Employment Status</label>
+                        <div class="col-sm-10">
+                            <select class="form-select form-info form-control">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Industry-->
+                    <div class="row mb-3">
+                        <label for="industry" class="col-sm-2 col-form-label">Industry</label>
+                        <div class="col-sm-10">
+                            <select class="form-select form-info form-control">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Employer-->
+                    <div class="row mb-3">
+                        <label for="employer" class="col-sm-2 col-form-label">Employer</label>
+                        <div class="col-sm-10">
+                            <select class="form-select form-info form-control">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Occupation-->
+                    <div class="row mb-3">
+                        <label for="occupation" class="col-sm-2 col-form-label">Occupation</label>
+                        <div class="col-sm-10">
+                            <select class="form-select form-info form-control">
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <hr class="mb-5" style="background-color:#9F9F9F;">
+
+                    <!--About Me-->
+                    <div class="row mb-3">
+                        <label for="aboutMe" class="col-sm-2 col-form-label">About Me</label>
+                        <div class="col-sm-10">
+                            <textarea rows="5" style="height:100%;" class=" form-info form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <!--Location-->
+                    <div class="row mb-3">
+                        <label for="location" class="col-sm-2 col-form-label">Location</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-info form-control">
+                        </div>
+                    </div>
+
+                    <!--Gender-->
+                    <div class="row mb-3">
+                        <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+                        <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Female</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="other"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Date-->
+                    <div class="row mb-3">
+                        <label for="date" class="col-sm-2 col-form-label">Date</label>
+                        <div class="col-sm-10">
+                            <div id="dateDropdownDiv">
+                                <select id="dateDropdownField"></select>
+                                <select id="monthDropdownField" onchange="onChangeYearAndMonth(this)"></select>
+                                <select id="yearDropdownField" onchange="onChangeYearAndMonth(this)"></select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Phone Number-->
+                    <div class="row mb-3">
+                        <label for="phoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-info form-control">
+                        </div>
+                    </div>
+
+                    <!--Save Info Button-->
+                    <div class="row">
+                        <div class="col-sm-10 text-center">
+                            <button type="submit" class="save-info-button">Save Info</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <section>
+        <footer class="text-white text-center text-md-start" style="background: #004A3E;">
+            <!-- Grid container -->
+
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-start">
+                        <div class="d-flex mb-4">
+                            <img src="./images/logo/StudyBhai Logo 1.png" style="height: 30px;">
+                            <button class="ms-5 language-button">English</button>
+                        </div>
+
+                        <p>
+                            StudyBhai is a place where you, your team or company can develop.
+                            Identify goals, learn and track progress!
+                        </p>
+                        <p>© 2021 StudyBhai. All rights reserved.</p>
+                    </div>
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
+                        <h5 style="color:#00C9A8">StudyBhai</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#" class="text-decoration-none  text-white">Courses
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none  text-white"> Prices</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none text-white"> Prices</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
+                        <h5 style="color:#00C9A8">About Us</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#" class="text-decoration-none  text-white">Company
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none  text-white"> Roadmap</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none  text-white">Terms and conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0 text-start">
+                        <h5 style="color:#00C9A8">Need Help?</h5>
+                        <a href="#" class="text-decoration-none text-white">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+    <!--==================== DATE PICKER ====================-->
+    <script src="./js/date_picker.js"></script>
+
+    <!--==================== UPLOAD PHOTO ====================-->
+    <script src="./js/upload_photo.js"></script>
+
+    <!--==================== JavaScript Bundle with Popper ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+</body>
+
+</html>
